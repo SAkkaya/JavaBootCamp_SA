@@ -141,7 +141,7 @@ Java Boot Camp
 
 
 21. Abstraction: hiding the implementation details
-				 putting teh focus on essentials without worrying about small details
+				 putting the focus on essentials without worrying about small details
 
 
 				 Abstract method: method without the body
@@ -149,15 +149,18 @@ Java Boot Camp
 
 				2 ways:
 					1. abstract class: meant to be super class (can not be final)
-									  can not create object
+									  can not create object ( it not concrete class , is it abstract so u cannot create object)
 
-									  abstract class can have all the methods & variables of regualr class can have
+									  abstract class can have all the methods & variables of regular class can have
 
 
 					2. interface: blueprint of the class, meant to be implemented (cannot final)
 									public is the only accessmodifier
-									cannot create object
+									it is not a class so cannot create object ( so cannot have constructor)
+                                    (blocks, instance variables and methods -> you cannot have either)
 
+                                    (you can have the variables that are static and final by default
+                                    abstract, deafult, static methods  what you can have in interface)
 
 						ex:
 							WebDriver, WebElement, List, JavaScritpExecuter, TakeScreenShot...

@@ -1,25 +1,28 @@
-package day02.inheritance_abstraction;
+package day02Sa.inheritence_abstraction;
 
 public abstract class Car {
 
     public final int year;
     public final String make, model;
-    public String color;
+    public final String color;
     public double price;
 
-    public Car(int year, String make, String model, String color, double price) { // initializes instances
+    public Car(int year, String make, String model, String color, double price) {
         this.year = year;
         this.make = make;
         this.model = model;
         this.color = color;
         this.price = price;
     }
-// implementation will not be changed so i made it final
+
     public final void drive(){
-        System.out.println("Driving "+make+" "+model);
+        System.out.println("Driving "+make+" "+ model);
+
     }
 
     public abstract void start();
+
+
 
     @Override
     public String toString() {
@@ -31,4 +34,8 @@ public abstract class Car {
                 ", price=" + price +
                 '}';
     }
+
+
+
+
 }

@@ -25,7 +25,22 @@ public class Loops {
             }
             System.out.println("");
         }
+        System.out.println();
 
+        System.out.println("----------------------------------");
+
+
+        char[] ch1 = {'A', 'B', 'C', 'D', 'E'};
+
+        for (int k = 0; k < ch1.length; k++) {
+            System.out.print(ch1[k] + " ");
+        }
+
+        System.out.println("----------------------------------");
+
+        for (char each : ch1) {
+            System.out.print(each);
+        }
 
 
 

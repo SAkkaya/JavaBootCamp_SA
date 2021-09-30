@@ -88,20 +88,20 @@ Java Boot Camp
 				   improves the reusability of the codes
 
 		   declare:
-		   		AM  specifier  returnType  methodName (Parameter){
+
+		   		AM(Access Modifiers)  specifier  returnType  methodName (Parameter){
 
 		   		}
 
-	   			AM: public, protected, default, private
-	   			specifiers: static, final, abstract, synchronized, default(only in interface)
+	   			AM: public, protected, default, private     (AC can be given only one times in one method)
+	   			specifiers: static, final, abstract, synchronized (thread-safe->(one thread at a time)), default(only in interface)    (specifiers can be given more than one times in the same method - static final or static final abstract etc..)
 	   			returnType: void, DataType
 	   			Parameter: DataType
 	   			methodName: anyName
 
 
-
 10. method overloading (static Polymorphism): multiple methods sharing the same method name
-						method name MUST be same and Parameter MUST be different
+					   MUST be same and Parameter MUST be different
 
 
 11. Constructor: special method that every class MUST have
@@ -119,7 +119,7 @@ Java Boot Camp
 
  		BasePage:
  			public Constructor(){
- 				PageFactory.InitElemnt(  driver, this)
+ 				PageFactory.InitElement(  driver, this)
  			}
 
  			@FindBy
